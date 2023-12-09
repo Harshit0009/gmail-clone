@@ -4,6 +4,7 @@ import { Button, IconButton } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import SidebarOption from './SidebarOption';
 import { Duo, Inbox, Note, Person, Phone, Send, Snooze, Star } from '@mui/icons-material';
+import { Outlet } from 'react-router-dom';
 
 function Sidebar() {
   return (
@@ -38,6 +39,7 @@ function Sidebar() {
             </IconButton>
         </div>
       </div>
+      <Outlet />
     </div>
   );
 }

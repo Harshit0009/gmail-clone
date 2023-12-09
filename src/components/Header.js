@@ -6,6 +6,7 @@ import { Avatar, IconButton } from "@mui/material";
 import { ArrowDropDown} from "@mui/icons-material";
 import { Apps } from "@mui/icons-material";
 import { Notifications } from "@mui/icons-material";
+import { Outlet } from "react-router-dom";
 
 function Header(){
     return <div className="header">
@@ -31,6 +32,7 @@ function Header(){
             </IconButton>
             <Avatar />
         </div>
+    <Outlet />
     </div>
 }
 
